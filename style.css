@@ -1,51 +1,89 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
 
+/* Header Fonts */
+h1, h2 {
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+/* General Layout */
 body {
-  background: #121212;
-  color: white;
-  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
+  color: #f1f1f1;
+  font-family: 'Segoe UI', sans-serif;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 30px;
 }
 
+/* Container Style */
 .container {
-  background: #1e1e1e;
-  padding: 20px;
-  border-radius: 10px;
+  background: #1b1f27;
+  padding: 30px;
+  border-radius: 15px;
   width: 90%;
-  max-width: 400px;
+  max-width: 420px;
   text-align: center;
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.08);
 }
 
+/* Headings */
 h1, h3 {
-  color: #00e676;
+  color: #86e7ff;
+  margin-bottom: 20px;
 }
 
+/* Input Styles */
 input[type="date"] {
   width: 90%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: none;
+  padding: 12px;
+  margin: 15px 0;
+  border-radius: 8px;
+  border: 1px solid #3a3f4b;
+  background: #14181f;
+  color: #f1f1f1;
+  outline: none;
+  transition: border-color 0.3s;
 }
 
+input[type="date"]:focus {
+  border-color: #8afff7;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+/* Button Styles */
 .buttons {
-  margin: 20px 0;
+  margin: 25px 0;
 }
 
 button {
-  padding: 10px 20px;
+  padding: 12px 25px;
   margin: 0 10px;
   border: none;
-  background-color: #00e676;
-  color: black;
-  border-radius: 5px;
+  background: linear-gradient(135deg, #c471f5, #fa71cd);
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
   cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+button:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 12px #fa71cd;
+}
+
+/* Result Cards */
 .result {
-  background: #333;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 15px;
+  background: #21262d;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  color: #00ffd5;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: 0 0 10px rgba(0,255,255,0.05);
 }
